@@ -10,6 +10,11 @@ player = str(input("Playerfigur : "))
 computer = str(input("Computerfigur : "))
 figur = ""
 
+if player == computer:
+    computer = "x"
+    if player == computer:
+        computer = "y"
+
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 
@@ -157,6 +162,10 @@ def reset():
          6, 7, 8]
     player = str(input("Playerfigur : "))
     computer = str(input("Computerfigur : "))
+    if player == computer:
+        computer = "x"
+    if player == computer:
+        computer = "y"
     play_game()
     
 figur = ""
