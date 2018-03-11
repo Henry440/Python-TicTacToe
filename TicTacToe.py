@@ -149,6 +149,8 @@ def end_screen():
         exit()
     
 def reset():
+    global player
+    global computer
     global board
     board = [0, 1, 2,
          3, 4, 5,
