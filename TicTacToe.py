@@ -10,7 +10,6 @@ player = str(input("Playerfigur : "))
 computer = str(input("Computerfigur : "))
 figur = ""
 
-
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 
@@ -51,6 +50,7 @@ def play_game():
                 break
 
 def checkwin(board, figur):
+
     figur = figur
     
     if board[0] == figur:
@@ -126,7 +126,6 @@ def checkwin(board, figur):
                 else:
                     print("Der Computer hat gewonnen")
                     end_screen()
-    
     
 def get_board():
     print("Feld schon Belegt \nBitte nochmal eingeben")
