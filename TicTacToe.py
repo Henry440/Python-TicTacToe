@@ -149,6 +149,7 @@ def end_screen():
         exit()
     
 def reset():
+    cls()
     global player
     global computer
     global board
