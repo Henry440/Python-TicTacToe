@@ -66,7 +66,7 @@ def checkwin(board, figur):
                 else:
                     print("Der Computer hat gewonnen")
                     end_screen()
-        elif board[4] == figur:
+        if board[4] == figur:
             if board[8] == figur:
                 if figur == player:
                     print("Der Spieler hat gewonnen")
@@ -74,7 +74,7 @@ def checkwin(board, figur):
                 else:
                     print("Der Computer hat gewonnen")
                     end_screen()
-        elif board[3] == figur:
+        if board[3] == figur:
             if board[6] == figur:
                 if figur == player:
                     print("Der Spieler hat gewonnen")
@@ -102,6 +102,34 @@ def checkwin(board, figur):
                 else:
                     print("Der Computer hat gewonnen")
                     end_screen()
+
+    if board[1] == figur:
+        if board[4] == figur:
+            if board[7] == figur:
+                if figur == player:
+                    print("Der Spieler hat gewonnen")
+                    end_screen()
+                else:
+                    print("Der Computer hat gewonnen")
+                    end_screen()
+
+    if board[2] == figur:
+        if board[5] == figur:
+            if board[8] == figur:
+                if figur == player:
+                    print("Der Spieler hat gewonnen")
+                    end_screen()
+                else:
+                    print("Der Computer hat gewonnen")
+                    end_screen()
+        if board[4] == figur:
+            if board[6] == figur:
+                if figur == player:
+                    print("Der Spieler hat gewonnen")
+                    end_screen()
+                else:
+                    print("Der Computer hat gewonnen")
+                    end_screen()
         
     
 def get_board():
@@ -114,6 +142,13 @@ def get_board():
     print("")
 
 def end_screen():
-    time.sleep(1)
+    time.sleep(10)
+    board = [0, 1, 2,
+         3, 4, 5,
+         6, 7, 8]
+    
+    
+    exit()
+    
 
 play_game()
