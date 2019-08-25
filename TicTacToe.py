@@ -21,7 +21,7 @@ def cls():
 def play_game():
 
     playing = True
-    
+
     while playing:
         cls()
         get_board()
@@ -57,7 +57,7 @@ def play_game():
 def checkwin(board, figur):
 
     figur = figur
-    
+
     if board[0] == figur:
         if board[1] == figur:
             if board[2] == figur:
@@ -131,7 +131,7 @@ def checkwin(board, figur):
                 else:
                     print("Der Computer hat gewonnen")
                     end_screen()
-    
+
 def get_board():
     print("Feld schon Belegt \nBitte nochmal eingeben")
     print(board[0], "|", board[1], "|", board[2])
@@ -151,7 +151,7 @@ def end_screen():
         reset()
     else:
         exit()
-    
+
 def reset():
     cls()
     global player
@@ -167,6 +167,6 @@ def reset():
     if player == computer:
         computer = "y"
     play_game()
-    
+
 figur = ""
 play_game()
